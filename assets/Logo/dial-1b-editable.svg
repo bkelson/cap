@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <title>Cap dial — 1b</title>
+  <g id="Dial" data-name="Dial">
+    <path id="Track" data-name="Track" d="M 862.49,138.77 A 512 512 0 0 1 512,1024 L 512,829.44 A 317.44 317.44 0 0 0 729.3,280.6 Z" fill="#413630"></path>
+    <path id="Fill" data-name="Fill" d="M 512,1024 A 512 512 0 1 1 862.49,138.77 L 729.3,280.6 A 317.44 317.44 0 1 0 512,829.44 Z" fill="#C4643F"></path>
+  </g>
+</svg>

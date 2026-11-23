@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <title>Cap dial — 1b construction</title>
+  <g id="Ring" data-name="Ring">
+    <circle id="Outer" data-name="Outer circle" cx="512" cy="512" r="512" fill="#413630"></circle>
+    <circle id="Hole" data-name="Hole circle" cx="512" cy="512" r="317.44" fill="#FFFFFF"></circle>
+  </g>
+  <g id="Sweep" data-name="Sweep">
+    <path id="Wedge-fill" data-name="Wedge 62 percent" d="M 512 512 L 512,1024 A 512 512 0 1 1 862.49,138.77 Z" fill="#C4643F"></path>
+    <path id="Wedge-track" data-name="Wedge remainder" d="M 512 512 L 862.49,138.77 A 512 512 0 0 1 512,1024 Z" fill="#413630"></path>
+  </g>
+</svg>
