@@ -20,7 +20,7 @@ Cap is version 1, and it's the first step in a bigger project. That project is a
 
 **Who can use Cap?**
 
-People on a Claude Pro or Max plan, using Claude Code or the Claude desktop app, on an Apple silicon Mac running macOS 13 or later.
+People on a Claude Pro, Max or Ultra plan (Ultra is the plan that used to be called Max 20x), using Claude Code or the Claude desktop app, on an Apple silicon Mac running macOS 13 or later.
 
 **Is Cap made by Anthropic?**
 

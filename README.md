@@ -11,7 +11,7 @@
 
 > **Make the costs of AI visible, so using it responsibly becomes a habit.** Read the [vision and principles](VISION.md).
 
-Cap is a small, free menu bar app for people who use Claude Code or the Claude desktop app on a Pro or Max plan. It shows how much of your 5-hour session and your weekly limit you have used, and when each resets, so you find out *before* you hit the wall.
+Cap is a small, free menu bar app for people who use Claude Code or the Claude desktop app on a Pro, Max or Ultra plan. It shows how much of your 5-hour session and your weekly limit you have used, and when each resets, so you find out *before* you hit the wall.
 
 > **Unofficial.** Cap is an independent project. It is not made by, affiliated with, or endorsed by Anthropic. "Claude" is a trademark of Anthropic.
 
@@ -51,7 +51,7 @@ Cap is a small, free menu bar app for people who use Claude Code or the Claude d
 ## Requirements
 
 - macOS 13 or later, Apple silicon (arm64).
-- Claude Code or the Claude desktop app, signed in with a **Pro or Max** account.
+- Claude Code or the Claude desktop app, signed in with a **Pro, Max or Ultra** account. Verified Ultra accounts have no 5-hour limit, so for now Cap's Session figure is empty for them and only the weekly figure shows.
 
 **About signing in:** Cap reads your numbers through your own Claude Code sign-in, and Claude Code sign-ins last about a month. Cap tells you a week ahead (and again two days ahead) and renews it with one browser approval, about a minute, at a time you choose. If a sign-in ever ends before you renew it, the menu bar says so and one click signs you in again. The week-ahead warning needs a recent Claude Code (version 2.1.318 or later).
 

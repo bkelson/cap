@@ -7,7 +7,7 @@ Cap is free and open source, and it is not yet notarized by Apple. That means ma
 ## Before you start
 
 - macOS 13 or later, on an Apple silicon Mac (M1 or newer).
-- Claude Code or the Claude desktop app, signed in with a **Pro or Max** plan.
+- Claude Code or the Claude desktop app, signed in with a **Pro, Max or Ultra** plan.
 - The screenshots below are in English. On a Mac set to another language, the wording will differ but the steps are the same.
 
 ## Why there is a warning
