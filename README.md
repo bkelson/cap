@@ -93,6 +93,16 @@ You need a recent Swift toolchain (Swift 6.2 / Xcode 26). There are no third-par
 
 If you turn on "Check for updates automatically" in Settings, Updates, Cap checks GitHub once a day for a newer release and tells you with a small red dot on its Settings icon. It's off until you choose to turn it on. It never downloads or installs anything by itself: *Download* opens the release page in your browser.
 
+## Design
+
+The whole design file is free to copy: the design system (color, spacing, radius and type tokens, text styles and components), every app screen and the click-through prototype.
+
+<p align="center">
+<a href="https://www.figma.com/community/file/1707045222778979547"><img src="assets/readme/design-system.png" width="880" alt="Cap's popover shown in twelve states, including live readings, high usage, first reading, offline, signed out and signing in."></a>
+</p>
+
+[Open the Figma file](https://www.figma.com/community/file/1707045222778979547), duplicate it, publish your copy as a library and build on it. It is free to reuse with credit (CC BY 4.0). The rules, the page map and how to suggest changes are in [DESIGN.md](DESIGN.md).
+
 ## Status and roadmap
 
 Cap is new. [See the roadmap](ROADMAP.md): a plan, not a promise. For what Cap is for and the principles it keeps, read [VISION.md](VISION.md).
