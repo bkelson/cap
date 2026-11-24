@@ -27,6 +27,10 @@ Give your Claude project the link to your copy (Figma's Claude connector can rea
 | Install, Menu bar & Popover, Widget, Settings | Every app screen |
 | Prototype | The click-through, from first download to daily use. Open it and press Present (Option+Command+Return) |
 
+## Tokens in code
+
+[`design/tokens.css`](design/tokens.css) holds the same variables as CSS custom properties (`--cap-surface-shell`, `--cap-space-m`, and so on), with light, dark and the seven widget styles. It was checked against the Figma file value by value. Shadows live only in the CSS; Figma draws them as effects.
+
 ## Principles
 
 - Show exact numbers, not estimates.

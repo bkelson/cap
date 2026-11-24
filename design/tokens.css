@@ -1,0 +1,333 @@
+/* Cap design tokens. Mirrors the variables in the Cap Figma file (Color, Spacing, Radius, Opacity, Widget).
+   Figma is the source of truth: https://www.figma.com/community/file/1707045222778979547
+   Naming: Figma surface/shell -> --cap-surface-shell. Light is the default.
+   Dark: @media (prefers-color-scheme: dark) or [data-theme="dark"]. Force light with [data-theme="light"].
+   Widget styles: set data-widget="default-light" (or another Widget mode) to switch the --cap-widget-* values.
+   Shadows are defined here only; the Figma file draws them as effects.
+   Free to reuse with credit (CC BY 4.0). */
+:root {
+  --cap-space-2xs: 3px;
+  --cap-space-xs: 4px;
+  --cap-space-s: 6px;
+  --cap-space-m: 9px;
+  --cap-space-l: 12px;
+  --cap-space-xl: 14px;
+  --cap-space-2xl: 16px;
+  --cap-space-3xl: 18px;
+  --cap-space-4xl: 20px;
+  --cap-space-5xl: 24px;
+  --cap-radius-xs: 6px;
+  --cap-radius-s: 7px;
+  --cap-radius-m: 9px;
+  --cap-radius-l: 10px;
+  --cap-radius-card: 12px;
+  --cap-radius-shell: 18px;
+  --cap-radius-widget: 22px;
+  --cap-radius-pill: 26px;
+  --cap-opacity-stale: 0.55;
+  --cap-opacity-menubar-capsule: 0.14;
+  --cap-opacity-menubar-capsule-solid: 0.12;
+  --cap-radius-button: 8px;
+  --cap-shadow-widget: 0 12px 30px rgba(0,0,0,.18);
+  --cap-opacity-track: 0.3;
+  --cap-font: -apple-system, "SF Pro Text", "SF Pro Display", system-ui, sans-serif;
+}
+:root, [data-theme="light"] {
+  --cap-surface-shell: #F8F5F2;
+  --cap-surface-card: #F4F0EC;
+  --cap-surface-strip: #E4DCD5;
+  --cap-surface-notice: #ECE5DF;
+  --cap-surface-amber-tint: rgba(178,106,0,0.1);
+  --cap-border-default: #DCD3CC;
+  --cap-text-ink: #1E1A18;
+  --cap-text-muted: #685D56;
+  --cap-text-empty-figure: #B4A9A2;
+  --cap-dial-track: #E2D9D2;
+  --cap-dial-all-models-fill: #C4643F;
+  --cap-accent-brand: #C4643F;
+  --cap-button-primary: #B5532F;
+  --cap-status-success: #2F7D4F;
+  --cap-status-warning: #9A5B00;
+  --cap-popover-surface: #F4F1EE;
+  --cap-popover-hairline: #E4DDD7;
+  --cap-popover-border: #D3C9C0;
+  --cap-popover-track: #E0D7D0;
+  --cap-popover-ink: #241E1B;
+  --cap-severity-warning-fill: #FF9500;
+  --cap-severity-critical-fill: #FF3B30;
+  --cap-severity-warning-text: #C26100;
+  --cap-severity-critical-text: #CC1419;
+  --cap-onboarding-chip: #E2D9D2;
+  --cap-onboarding-hairline: #E0D8D1;
+  --cap-onboarding-muted: #6F645D;
+  --cap-onboarding-primary-text: #FFFFFF;
+  /* Names as in Figma: success-tint is the solid green, success-fill the translucent one. */
+  --cap-onboarding-success-tint: #2F7D4F;
+  --cap-onboarding-success-fill: rgba(47,125,79,0.12);
+  --cap-onboarding-mode-fill: #ECE5DF;
+  /* Deprecated: not used by the shipped app. Kept so the names match the Figma file. */
+  --cap-text-session-figure: #C9620E;
+  --cap-dial-session-fill: #F7922E;
+  --cap-dial-session-track: #FAD6BC;
+  /* Controls, menu bar, notifications and macOS system colors (these draw mock macOS windows) */
+  --cap-control-track: #F8F5F2;
+  --cap-popover-hatch: rgba(30,26,24,0.05);
+  --cap-switch-knob: #FFFFFF;
+  --cap-menubar-bg: #E9E4E0;
+  --cap-menubar-ink: #1E1A18;
+  --cap-menubar-label: #5C534E;
+  --cap-menubar-divider: rgba(30,26,24,0.3);
+  --cap-menubar-highlight: rgba(30,26,24,0.1);
+  --cap-notification-bg: rgba(246,243,240,0.94);
+  --cap-notification-border: rgba(30,26,24,0.1);
+  --cap-system-window-bg: #ECECEC;
+  --cap-system-group-bg: #FFFFFF;
+  --cap-system-separator: rgba(0,0,0,0.08);
+  --cap-system-label: #1D1D1F;
+  --cap-system-secondary-label: #6E6E73;
+  --cap-system-control-track: #E3E3E8;
+  --cap-system-control-selected: #FFFFFF;
+  --cap-system-switch-off: #D1D1D6;
+  --cap-system-accent: #0A84FF;
+  --cap-badge-update: var(--cap-severity-critical-fill);
+  --cap-menubar-capsule: rgba(30,26,24,0.14);
+  --cap-menubar-capsule-solid: rgba(30,26,24,0.12);
+  --cap-logo-on-solid: #FFF6F0;
+  --cap-logo-mono-8: rgba(30,26,24,0.08);
+  --cap-logo-mono-30: rgba(30,26,24,0.3);
+  --cap-shadow-popover: 0 18px 40px rgba(30,26,24,.16);
+  --cap-shadow-window: 0 24px 60px rgba(30,26,24,.22), 0 0 0 .5px rgba(30,26,24,.18);
+  --cap-shadow-banner: 0 10px 30px rgba(30,26,24,.18);
+  --cap-shadow-knob: 0 1px 2px rgba(0,0,0,.25);
+  color-scheme: light;
+}
+[data-theme="dark"] {
+  --cap-surface-shell: #2A2321;
+  --cap-surface-card: #231D1B;
+  --cap-surface-strip: #3A322D;
+  --cap-surface-notice: #1C1716;
+  --cap-surface-amber-tint: rgba(240,180,90,0.1);
+  --cap-border-default: #463C36;
+  --cap-text-ink: #F4F1EE;
+  --cap-text-muted: #A89D95;
+  --cap-text-empty-figure: #6E625B;
+  --cap-dial-track: #3E3530;
+  --cap-dial-all-models-fill: #C4643F;
+  --cap-accent-brand: #C4643F;
+  --cap-button-primary: #D9744C;
+  --cap-status-success: #7BC79A;
+  --cap-status-warning: #F0B45A;
+  --cap-popover-surface: #241E1B;
+  --cap-popover-hairline: #3A302B;
+  --cap-popover-border: #54463C;
+  --cap-popover-track: #413630;
+  --cap-popover-ink: #F4F1EE;
+  --cap-severity-warning-fill: #FF9F0A;
+  --cap-severity-critical-fill: #FF453A;
+  --cap-severity-warning-text: #FFB84D;
+  --cap-severity-critical-text: #FF6B66;
+  --cap-onboarding-chip: #3A322D;
+  --cap-onboarding-hairline: #3A312C;
+  --cap-onboarding-muted: #A89D95;
+  --cap-onboarding-primary-text: #1E1A18;
+  --cap-onboarding-success-tint: #7BC79A;
+  --cap-onboarding-success-fill: rgba(123,199,154,0.14);
+  --cap-onboarding-mode-fill: #1C1716;
+  /* Deprecated: not used by the shipped app. Kept so the names match the Figma file. */
+  --cap-text-session-figure: #E58A64;
+  --cap-dial-session-fill: #F7922E;
+  --cap-dial-session-track: #3E3530;
+  /* Controls, menu bar, notifications and macOS system colors (these draw mock macOS windows) */
+  --cap-control-track: #1E1917;
+  --cap-popover-hatch: rgba(255,255,255,0.05);
+  --cap-switch-knob: #FFFFFF;
+  --cap-menubar-bg: #1E1A18;
+  --cap-menubar-ink: #FFFFFF;
+  --cap-menubar-label: rgba(255,255,255,0.72);
+  --cap-menubar-divider: rgba(255,255,255,0.35);
+  --cap-menubar-highlight: rgba(255,255,255,0.16);
+  --cap-notification-bg: rgba(44,37,34,0.94);
+  --cap-notification-border: rgba(255,255,255,0.12);
+  --cap-system-window-bg: #2B2B2D;
+  --cap-system-group-bg: #3A3A3C;
+  --cap-system-separator: rgba(255,255,255,0.1);
+  --cap-system-label: #F2F2F7;
+  --cap-system-secondary-label: #A1A1A8;
+  --cap-system-control-track: #2C2C2E;
+  --cap-system-control-selected: #636366;
+  --cap-system-switch-off: #59595C;
+  --cap-system-accent: #0A84FF;
+  --cap-badge-update: var(--cap-severity-critical-fill);
+  --cap-menubar-capsule: rgba(255,255,255,0.14);
+  --cap-menubar-capsule-solid: rgba(255,255,255,0.12);
+  --cap-logo-on-solid: #FFF6F0;
+  --cap-logo-mono-8: rgba(244,241,238,0.08);
+  --cap-logo-mono-30: rgba(244,241,238,0.3);
+  --cap-shadow-popover: 0 18px 40px rgba(0,0,0,.45);
+  --cap-shadow-window: 0 24px 60px rgba(0,0,0,.5), 0 0 0 .5px rgba(255,255,255,.12);
+  --cap-shadow-banner: 0 10px 30px rgba(0,0,0,.45);
+  --cap-shadow-knob: 0 1px 2px rgba(0,0,0,.35);
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --cap-surface-shell: #2A2321;
+    --cap-surface-card: #231D1B;
+    --cap-surface-strip: #3A322D;
+    --cap-surface-notice: #1C1716;
+    --cap-surface-amber-tint: rgba(240,180,90,0.1);
+    --cap-border-default: #463C36;
+    --cap-text-ink: #F4F1EE;
+    --cap-text-muted: #A89D95;
+    --cap-text-empty-figure: #6E625B;
+    --cap-dial-track: #3E3530;
+    --cap-dial-all-models-fill: #C4643F;
+    --cap-accent-brand: #C4643F;
+    --cap-button-primary: #D9744C;
+    --cap-status-success: #7BC79A;
+    --cap-status-warning: #F0B45A;
+    --cap-popover-surface: #241E1B;
+    --cap-popover-hairline: #3A302B;
+    --cap-popover-border: #54463C;
+    --cap-popover-track: #413630;
+    --cap-popover-ink: #F4F1EE;
+    --cap-severity-warning-fill: #FF9F0A;
+    --cap-severity-critical-fill: #FF453A;
+    --cap-severity-warning-text: #FFB84D;
+    --cap-severity-critical-text: #FF6B66;
+    --cap-onboarding-chip: #3A322D;
+    --cap-onboarding-hairline: #3A312C;
+    --cap-onboarding-muted: #A89D95;
+    --cap-onboarding-primary-text: #1E1A18;
+    --cap-onboarding-success-tint: #7BC79A;
+    --cap-onboarding-success-fill: rgba(123,199,154,0.14);
+    --cap-onboarding-mode-fill: #1C1716;
+    /* Deprecated: not used by the shipped app. Kept so the names match the Figma file. */
+    --cap-text-session-figure: #E58A64;
+    --cap-dial-session-fill: #F7922E;
+    --cap-dial-session-track: #3E3530;
+    /* Controls, menu bar, notifications and macOS system colors (these draw mock macOS windows) */
+    --cap-control-track: #1E1917;
+    --cap-popover-hatch: rgba(255,255,255,0.05);
+    --cap-switch-knob: #FFFFFF;
+    --cap-menubar-bg: #1E1A18;
+    --cap-menubar-ink: #FFFFFF;
+    --cap-menubar-label: rgba(255,255,255,0.72);
+    --cap-menubar-divider: rgba(255,255,255,0.35);
+    --cap-menubar-highlight: rgba(255,255,255,0.16);
+    --cap-notification-bg: rgba(44,37,34,0.94);
+    --cap-notification-border: rgba(255,255,255,0.12);
+    --cap-system-window-bg: #2B2B2D;
+    --cap-system-group-bg: #3A3A3C;
+    --cap-system-separator: rgba(255,255,255,0.1);
+    --cap-system-label: #F2F2F7;
+    --cap-system-secondary-label: #A1A1A8;
+    --cap-system-control-track: #2C2C2E;
+    --cap-system-control-selected: #636366;
+    --cap-system-switch-off: #59595C;
+    --cap-system-accent: #0A84FF;
+    --cap-badge-update: var(--cap-severity-critical-fill);
+    --cap-menubar-capsule: rgba(255,255,255,0.14);
+    --cap-menubar-capsule-solid: rgba(255,255,255,0.12);
+    --cap-logo-on-solid: #FFF6F0;
+    --cap-logo-mono-8: rgba(244,241,238,0.08);
+    --cap-logo-mono-30: rgba(244,241,238,0.3);
+    --cap-shadow-popover: 0 18px 40px rgba(0,0,0,.45);
+    --cap-shadow-window: 0 24px 60px rgba(0,0,0,.5), 0 0 0 .5px rgba(255,255,255,.12);
+    --cap-shadow-banner: 0 10px 30px rgba(0,0,0,.45);
+    --cap-shadow-knob: 0 1px 2px rgba(0,0,0,.35);
+    color-scheme: dark;
+  }
+}
+/* Widget styles: one attribute value per Figma Widget mode */
+[data-widget="default-light"] {
+  --cap-widget-bg: #FAF7F4E5;
+  --cap-widget-border: #FFFFFF99;
+  --cap-widget-highlight: #FFFFFFB2;
+  --cap-widget-ink: #1E1A18;
+  --cap-widget-muted: #1E1A1899;
+  --cap-widget-sub: #1E1A18BD;
+  --cap-widget-line: #1E1A181A;
+  --cap-widget-fill: #B5532F;
+  --cap-widget-track: #1E1A181A;
+  --cap-widget-figure: #A44A29;
+  --cap-widget-button: #1E1A1814;
+}
+[data-widget="default-dark"] {
+  --cap-widget-bg: #28211EE5;
+  --cap-widget-border: #FFFFFF1A;
+  --cap-widget-highlight: #FFFFFF1A;
+  --cap-widget-ink: #F4F1EE;
+  --cap-widget-muted: #F4F1EE99;
+  --cap-widget-sub: #F4F1EEC7;
+  --cap-widget-line: #FFFFFF1A;
+  --cap-widget-fill: #D9744C;
+  --cap-widget-track: #FFFFFF1F;
+  --cap-widget-figure: #E58A64;
+  --cap-widget-button: #FFFFFF1F;
+}
+[data-widget="dark"] {
+  --cap-widget-bg: #0E0C0BF0;
+  --cap-widget-border: #FFFFFF14;
+  --cap-widget-highlight: #FFFFFF0F;
+  --cap-widget-ink: #F4F1EE;
+  --cap-widget-muted: #F4F1EE8C;
+  --cap-widget-sub: #F4F1EEBD;
+  --cap-widget-line: #FFFFFF17;
+  --cap-widget-fill: #E89772;
+  --cap-widget-track: #FFFFFF1A;
+  --cap-widget-figure: #EFA582;
+  --cap-widget-button: #FFFFFF1F;
+}
+[data-widget="clear-light"] {
+  --cap-widget-bg: #FFFFFF29;
+  --cap-widget-border: #FFFFFF73;
+  --cap-widget-highlight: #FFFFFF8C;
+  --cap-widget-ink: #FFFFFF;
+  --cap-widget-muted: #FFFFFFD1;
+  --cap-widget-sub: #FFFFFFE5;
+  --cap-widget-line: #FFFFFF52;
+  --cap-widget-fill: #FFFFFF;
+  --cap-widget-track: #FFFFFF52;
+  --cap-widget-figure: #FFFFFF;
+  --cap-widget-button: #FFFFFF38;
+}
+[data-widget="clear-dark"] {
+  --cap-widget-bg: #00000033;
+  --cap-widget-border: #FFFFFF38;
+  --cap-widget-highlight: #FFFFFF40;
+  --cap-widget-ink: #FFFFFF;
+  --cap-widget-muted: #FFFFFFB8;
+  --cap-widget-sub: #FFFFFFDB;
+  --cap-widget-line: #FFFFFF3D;
+  --cap-widget-fill: #FFFFFF;
+  --cap-widget-track: #FFFFFF42;
+  --cap-widget-figure: #FFFFFF;
+  --cap-widget-button: #FFFFFF2E;
+}
+[data-widget="tinted-light"] {
+  --cap-widget-bg: #1C80FA6B;
+  --cap-widget-border: #FFFFFF73;
+  --cap-widget-highlight: #FFFFFF80;
+  --cap-widget-ink: #FFFFFF;
+  --cap-widget-muted: #FFFFFFCC;
+  --cap-widget-sub: #FFFFFFE5;
+  --cap-widget-line: #FFFFFF4D;
+  --cap-widget-fill: #FFFFFF;
+  --cap-widget-track: #FFFFFF4D;
+  --cap-widget-figure: #FFFFFF;
+  --cap-widget-button: #FFFFFF38;
+}
+[data-widget="tinted-dark"] {
+  --cap-widget-bg: #08326C94;
+  --cap-widget-border: #9ACFFF38;
+  --cap-widget-highlight: #9ACFFF33;
+  --cap-widget-ink: #D6EAFF;
+  --cap-widget-muted: #D6EAFFB2;
+  --cap-widget-sub: #D6EAFFD6;
+  --cap-widget-line: #9ACFFF33;
+  --cap-widget-fill: #9ACFFF;
+  --cap-widget-track: #9ACFFF38;
+  --cap-widget-figure: #D6EAFF;
+  --cap-widget-button: #9ACFFF2E;
+}
