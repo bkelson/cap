@@ -1,7 +1,5 @@
 # Frequently asked questions
 
-> **Draft, not yet approved.** Facts about Claude are as of 4 November 2026 and must be re-checked before each release.
-
 ## About Cap
 
 **Why does Cap exist?**
