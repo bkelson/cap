@@ -9,6 +9,8 @@
 
 <p align="center"><b>Your Claude plan usage, live in the Mac menu bar.</b></p>
 
+<p align="center"><a href="https://cap.kelson.ai"><b>See me in action at cap.kelson.ai</b></a> · <a href="https://cap.kelson.ai/faq/">FAQ</a></p>
+
 > **Make the costs of AI visible, so using it responsibly becomes a habit.** Read the [vision and principles](VISION.md).
 
 Cap is a small, free menu bar app for people who use Claude Code or the Claude desktop app on a Pro, Max or Ultra plan. It shows how much of your 5-hour session and your weekly limit you have used, and when each resets, so you find out *before* you hit the wall.
