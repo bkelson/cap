@@ -1,7 +1,7 @@
 <p align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/readme/roadmap-dark.png">
-  <img src="assets/readme/roadmap-light.png" width="880" alt="Cap roadmap. Make the costs of AI visible, so using it responsibly becomes a habit. A plan, not a promise. Items change. Phase 1, A dependable core: stable, easy to install, right about the basics. Done: menu bar, popover and widget. Done: limit and sign-in alerts. Planned: notarization (no more warning). Planned: one-click updates. Planned: FAQ and contributing guide. Planned: extra-usage status. Planned: accessibility check. Idea: install through Homebrew. Phase 2, More to see, more ways to see it: show more of what matters, without making Cap complicated. Exploring: token usage. Exploring: usage history. Exploring: pacing (&quot;you'll hit your limit around 3 pm&quot;). Exploring: modular readings. Exploring: Cap Labs. Exploring: Claude API usage. Planned: a few more display options. Idea: Mac widgets and Shortcuts. Idea: more languages. Phase 3, Informed choices: where we are headed; each part only happens with a method we can defend and show. Exploring: energy and water estimates. Exploring: open, public methodology. Idea: suggestions for lighter prompting. Idea: &quot;Start fresh?&quot; nudge for long chats. Idea: per-project view. Idea: weekly summary. Idea: open guide to lighter prompting. Beyond, dreams, not plans: one menu bar for all your AI; iPhone and Watch companion; open interface and community modules; opt-in anonymous comparisons; team view; open dataset for researchers.">
+  <img src="assets/readme/roadmap-light.png" width="880" alt="Cap roadmap. Make the costs of AI visible, so using it responsibly becomes a habit. A plan, not a promise. Items change. Phase 1, A dependable core: stable, easy to install, right about the basics. Done: menu bar, popover and widget. Done: limit and sign-in alerts. Done: notarization (no more warning). Done: FAQ. Planned: one-click updates. Planned: contributing guide. Planned: extra-usage status. Planned: accessibility check. Idea: install through Homebrew. Phase 2, More to see, more ways to see it: show more of what matters, without making Cap complicated. Exploring: token usage. Exploring: usage history. Exploring: pacing (&quot;you'll hit your limit around 3 pm&quot;). Exploring: modular readings. Exploring: Cap Labs. Exploring: Claude API usage. Planned: a few more display options. Idea: Mac widgets and Shortcuts. Idea: more languages. Phase 3, Informed choices: where we are headed; each part only happens with a method we can defend and show. Exploring: energy and water estimates. Exploring: open, public methodology. Idea: suggestions for lighter prompting. Idea: &quot;Start fresh?&quot; nudge for long chats. Idea: per-project view. Idea: weekly summary. Idea: open guide to lighter prompting. Beyond, dreams, not plans: one menu bar for all your AI; iPhone and Watch companion; open interface and community modules; opt-in anonymous comparisons; team view; open dataset for researchers.">
 </picture>
 </p>
 <p align="center"><em>I start with the basics, then show more, and only then help you choose. The full list is below.</em></p>
@@ -24,9 +24,10 @@ The vision behind it: *make the costs of AI visible, so using it responsibly bec
 - **Done:** menu bar dial and figures (Compact and Expanded), popover, pinned widget (Small, Medium, Strip).
 - **Done:** first-run welcome window; works with Claude Code or the Claude desktop app.
 - **Done:** limit alerts, signed-out alerts, one-click sign-in, daily update check against GitHub.
-- **Planned:** notarization, so macOS stops showing the "cannot verify the developer" warning.
-- **Planned:** one-click updates, once Cap is notarized.
-- **Planned:** a short FAQ, and a contributing guide so people can help.
+- **Done:** notarization, so macOS no longer shows the "cannot verify the developer" warning.
+- **Done:** a short [FAQ](FAQ.md).
+- **Planned:** one-click updates.
+- **Planned:** a contributing guide, so people can help.
 - **Planned:** extra-usage status (whether you are using paid overage), which Cap can already see.
 - **Planned:** a VoiceOver and keyboard check, so Cap works for everyone.
 - **Idea:** install with one line through Homebrew.

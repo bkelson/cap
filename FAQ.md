@@ -26,17 +26,17 @@ No. Cap is an independent project and is not made or endorsed by Anthropic. "Cla
 
 ## Installing
 
-**Why does macOS warn me when I open Cap?**
+**Will macOS warn me when I open Cap?**
 
-Cap isn't yet signed by Apple's paid developer programme, so macOS stops it the first time. Cap is open source, and the steps to open it are in [INSTALL.md](INSTALL.md). They take about three minutes, once per install.
+Only with its usual question for any app downloaded from the internet. Click **Open**. Since version 1.0.1, Cap is signed with an Apple Developer ID and notarized by Apple.
 
 **Is it safe to open?**
 
-Every release has a SHA-256 fingerprint on its release page. You can check your download against it in Terminal before you open it. You can also read all of the code, or build Cap yourself.
+Apple's notary service has scanned it for known malware, which is not a review of what the app does. Every release has a SHA-256 fingerprint on its release page. You can check your download against it in Terminal before you open it. You can also read all of the code, or build Cap yourself.
 
-**Do I have to do this again after an update?**
+**How do I update?**
 
-Yes, until Cap is notarized. Each new version shows the same warning, and the same steps open it.
+Quit Cap, open the new download, drag **Cap** onto **Applications** and choose **Replace**.
 
 ## Using Cap
 

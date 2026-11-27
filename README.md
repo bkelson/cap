@@ -63,7 +63,7 @@ Cap is a small, free menu bar app for people who use Claude Code or the Claude d
 2. Open it and drag **Cap** onto **Applications**.
 3. Open Cap. The welcome window walks you through the rest in five short steps.
 
-**A warning you will see the first time:** Cap is not yet notarized by Apple, so macOS stops it once and asks you to confirm. That is expected for a free hobby app that is not (yet) in Apple's developer programme. It takes about three minutes and is explained step by step, with the real messages, in **[INSTALL.md](INSTALL.md)**. Cap is open source: you can read every line, or build it yourself (below).
+**Signed and notarized.** Cap is signed with an Apple Developer ID and checked by Apple's notary service, so the first time you open it macOS only asks whether you want to open an app downloaded from the internet. [INSTALL.md](INSTALL.md) has the details. Cap is open source: you can read every line, or build it yourself (below).
 
 ## How it works, in plain words
 
